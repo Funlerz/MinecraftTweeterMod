@@ -1,5 +1,6 @@
 package com.funlerz.tweeter;
 
+import twitter4j.TwitterException;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,8 +24,11 @@ public class TweetCommand extends CommandBase {
 	@Override
 	public void execute(ICommandSender sender, String[] args) {
 		if (sender instanceof EntityPlayer) {
-			ChatComponentText message = new ChatComponentText("You are tweeting!");
-			((EntityPlayer) sender).addChatComponentMessage(message);
+			if (args.length > 0) {
+				TweeterMod.tweeter.tweet((EntityPlayer) sender, args);
+			} else {
+				TweeterMod.tweeter.tweet((EntityPlayer) sender, null);
+			}
 		}
 	}
 	
