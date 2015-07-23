@@ -9,3 +9,5 @@ Example:
 /tweet "I am tweeting from within Minecraft! #thanksobama"
 
 If the tweet is too long, you will see a message that your tweet was too long and nothing else will happen.
+
+Special thanks to Twitter4J (http://twitter4j.org) for a great Twitter API in Java.
