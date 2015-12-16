@@ -5,7 +5,7 @@
   "description": "Adds the /tweet command so you can tweet while you mine and craft.",
   "version": "1.1",
   "mcversion": "1.8",
-  "url": "http://funlerz.com/tweeter",
+  "url": "http://funlerz.com/modding/tweeter",
   "updateUrl": "",
   "authorList": ["Funlerz"],
   "credits": "Huge thanks to the Twitter4j contributors! (http://twitter4j.org)",
